@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        #area{
+            font: normal 20pt Arial;
+            background: blue;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseleave="sair()">
+        CLique aqui!
+    </div>
+
+
+    <script>
+        let propDiv=document.querySelector('#area')
+
+        function clicar(){
+            propDiv.style.background='red'
+            propDiv.innerHTML='Clicou'
+        }
+        function sair(){
+            propDiv.style.background='blue'
+            propDiv.innerHTML='Clique aqui!'
+        }
+        function entrar(){
+            propDiv.style.background='green'
+            propDiv.innerHTML='Agora!'
+        }
+            
+    </script>
+</body>
+</html>
